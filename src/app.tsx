@@ -16,7 +16,7 @@ export function App() {
           <img src={preactLogo} className="logo preact" alt="Preact logo" />
         </a>
       </div>
-      <h1>Vite + Preact</h1>
+      <h1 className="bg-red-500 p-4">Vite + Preact</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>
