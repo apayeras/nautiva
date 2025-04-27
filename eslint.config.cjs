@@ -18,17 +18,17 @@ module.exports = [
         ecmaVersion: 'latest',
         sourceType: 'module',
         ecmaFeatures: {
-          jsx: true,
-        },
+          jsx: true
+        }
       },
-      globals: globals.browser,
+      globals: globals.browser
     },
     plugins: {
-      '@typescript-eslint': tsPlugin,
+      '@typescript-eslint': tsPlugin
     },
     rules: {
-      ...tsPlugin.configs.recommended.rules,
-    },
+      ...tsPlugin.configs.recommended.rules
+    }
   },
 
   {
@@ -38,28 +38,28 @@ module.exports = [
         ecmaVersion: 'latest',
         sourceType: 'module',
         ecmaFeatures: {
-          jsx: true,
-        },
-      },
+          jsx: true
+        }
+      }
     },
     plugins: {
       react: reactPlugin,
       'react-hooks': reactHooksPlugin,
       'jsx-a11y': jsxA11yPlugin,
-      prettier: prettierPlugin,
+      prettier: prettierPlugin
     },
     rules: {
       ...reactPlugin.configs.recommended.rules,
       ...reactHooksPlugin.configs.recommended.rules,
       ...jsxA11yPlugin.configs.recommended.rules,
       'prettier/prettier': 'error',
-      'react/react-in-jsx-scope': 'off',
+      'react/react-in-jsx-scope': 'off'
     },
     settings: {
       react: {
         pragma: 'h',
-        version: '18.2',
-      },
-    },
-  },
+        version: '18.2'
+      }
+    }
+  }
 ];
